@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dhanesh</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./images/logo-removebg-preview.png">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body class="bg-bg w-[100vw] relative overflow-x-hidden">
+  <img src="./images/dummy.png" alt=""  class="fixed bottom-3 scale-0 md:scale-100 w-[12em]">
+  <img src="./images/dummy1.png" alt=""  class="fixed bottom-3 right-0 scale-0 md:scale-100 w-[10em]">
+  <!-- right stamp -->
+  <div class="scale-0 shade:scale-100 select-none text-[7em] text-gray fixed w-[10em] h-[1em] -top-[0.5em] -right-[4em] -rotate-90">Dhanesh</div>
+
+  <!-- left-stamp -->
+  <div  class="socialBtn select-none scale-0 shade:scale-100 cursor-pointer bg-black w-[7em] top-10 h-[6em] pl-3 text-[1.2em]  fixed rounded-r-full text-white flex flex-wrap justify-center items-center">
+        <div class="hover:text-dyn hover:scale-110 transition-all duration-200 ease-in-out font-port">Social Media accounts</div>
+  </div>
+
+   <div class="over w-[100%] h-[100%] z-10"></div>
+    <!-- social media -->
+    <div class="z-10 social transition-all duration-800 origin-left ease-in-out fixed w-[0] h-[60vh] top-[15em] backdrop-blur-sm bg-black rounded-r-3xl">
+      <div class="relative w-[100%] h-[100%] flex justify-center overflow-hidden">
+          
+        <div class="absolute top-[5%] left-[20%] w-[11em] h-[11em] rounded-full circle1"></div>
+        <div class="circle2"></div>
+        <div class="w-[100%] h-[100%] flex justify-center items-center wrapper">
+             <div class="absolute card-wrapper flex flex-col justify-evenly items-center gap-5 h-[90%] border-solid border-[2px] border-[#ffffff30] 
+             bg-[#ffffff1a] backdrop-opacity-60 px-8 py-4 rounded-xl">
+                <img class=" border-solid border-[2px] border-[#ffffff30] rounded-full w-[10em]" src="./images/myImage.png" alt="">
+                <h2 class="text-[#ffffffc4] text-[1.4em] username">Dhanesh Kumar, Tech Enthusiast</h2>
+                <div class="flex gap-3 justify-center bottom-group">
+                    <button onclick="openModal1()" class=" px-3 py-3 bg-[#ffffff00] border-[2px] border-solid border-[#ffffff30] capitalize rounded-lg
+                     text-[white] cursor-pointer hover:text-blue-400 hover:scale-105 transition-all duration-200 ease-in-out">
+                            <i class="fa-solid fa-share"></i><span>  Share My Profile</span>
+                    </button>
+                    <button class="button  text-white py-3 px-8 bg-[#ffffff00] border-[2px] border-solid border-[#ffffff30] capitalize rounded-lg
+                    text-[#ffffffb9] cursor-pointer hover:text-blue-400 hover:scale-105 transition-all duration-200 ease-in-out">Follow Me</button>
+                </div>
+             </div>
+        </div>
+      
+        <!--Modal section-->
+        <div class="modal1">
+            <div class="flex justify-between items-center pb-[12px] mb-6 border-b-[1px] border-solid border-b-[#ffffff88]">
+                <h1 id="share" class="text-white text-[25px]">Share My Profile</h1>
+                <div onclick="closeModal1()" class="text-white cursor-pointer text-[23px]"><i class="fa-solid fa-xmark close"></i></div>
+            </div>
+            <div class=" text-[23px] text-[#ffffff94]">Share Via</div>
+      
+            <div class="flex flex-row flex-wrap text-white justify-evenly mt-[20px]">
+                <a href="https://www.facebook.com/profile.php?id=100079241538210" target="_blank" id="facebook" class="icon border-[1px] border-solid border-[#1771e6] text-[#1771e6]"><i  class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/dande_dhanesh" id="twitter" target="_blank" class="icon border-[1px] border-solid border-[#1c99e6] text-[#1c99e6]"><i  class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/dhanesh_901/?next=%2F" target="_blank" id="instagram" class="icon border-[1px] border-solid border-[#cb2770] text-[#cb2770]"><i  class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/9381263541" id="whatsapp" target="_blank" class="icon border-[1px] border-solid border-[#2fe664] text-[#2fe664]"><i  class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/dhanesh-kumar-dande-3248841b9/" id="telegram" target="_blank" class="icon border-[1px] border-solid border-[#0081c2] text-[#0081c2]"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+      
+        </div>
+      
+        <!-- <div onclick="closeModal1()" class="overlay2"></div> -->
+      
+      </div>
+    </div>
+
+  <div class="w-[95%] inter:w-[1150px] mx-auto text-lmtext relative">
+    <!-- for removing pop events -->
+    <div onclick="closeModal()" class="overlay z-10"></div>    
+
+       <!-- nav bar -->
+    <div id="nav" class="flex items-center justify-between px-8 mx-auto relative search rounded-full mt-3 bg-bgcontent">
+        <div class="flex items-center select-none">
+          <img src="./images/D.png" alt="" class="w-[4rem]">
+          <div class="text-[1.5em]  md:text-[2rem]">hanesh Kumar</div>
+        </div>
+        <div class="text-[25px] flex gap-8 scale-0 w-0 h-0  md:w-fit md:h-fit md:scale-100">
+          <a href="#project" class="hover:scale-105 hover:text-org transition-all duration-200 ease-in-out">Projects</a>
+          <a href="#skills" class="hover:scale-105 hover:text-org transition-all duration-200 ease-in-out">Skills</a>
+          <a href="#contact" class="hover:scale-105 hover:text-org transition-all duration-200 ease-in-out">Contact Me</a>
+        </div>
+        <div class="md:hidden menu">
+          <img src="./images/icons8-menu-rounded-100.png" alt="" class="w-[4em]">
+        </div>
+
+           <div class="menuBox disable transition-all duration-300 ease-in-out absolute right-0 top-0 px-10 py-5 text-[25px] flex flex-col gap-6 items-center justify-center search rounded-xl bg-bgcontent z-10">
+                      <a href="#project" class="hover:scale-105">Projects</a>
+                      <a href="#skills" class="hover:scale-105">Skills</a>
+                      <a href="#contact" class="hover:scale-105">Contact Me</a>
+          </div>
+        
+
+    </div>
+
+    <!-- hero-section -->
+    <div class="flex gap-16 md:gap-0 justify-between flex-col md:flex-row px-6 md:px-16 mx-auto relative search rounded-3xl mt-10 bg-bgcontent pt-6 pb-12 md:py-16">
+
+      <!-- hero-section-left -->
+       <div class="text-[18px] gap-4 md:text-[1.5em] md:w-[55%] flex flex-col md:gap-10">
+        <div class="text-[23px] md:text-[1.7em]">Hi! Dhanesh Kumar</div>
+        <div class="text-[23px] md:text-[1.7em]">I am a <span class="role text-dyn leading-4 text-[1.2em]"></span> </div> 
+        <div class="text-black text-[20px]">I’m a software developer and here is my portfolio website. Here you’ll
+          learn about my journey as a software developer.</div>
+          <div class="mt-1">
+            <div class="btn-pink" id="btn"  onclick = "window.open('mailto: me20b010@iittp.ac.in','_blank')">Hire me</div></div>
+          
+       </div>
+
+      <!-- hero-section-right -->
+      <div class="md:w-[40%] flex justify-center items-center relative">
+         <img class="w-[280px] user-image" src="./images/myImage.png" alt="" >
+         <div class="absolute icon-dots">
+          <img src="./images/dots.png" alt="" />
+        </div>
+        <div class="absolute icon-cube">
+          <img src="./images/cube.png" alt="" />
+        </div>
+        <div class="absolute icon-circle">
+          <img src="./images/circle.png" alt="" />
+        </div>
+        <div class="absolute icon-zigzag">
+          <img src="./images/zigzags.png" alt="" />
+        </div>
+        <div class="absolute  icon-plus">
+          <img src="./images/plus.png" alt="" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- projects-section -->
+
+    <div class=" mt-10 md:mt-20 w-[100%] relative" id="project">
+       <div class="text-[50px] md:text-[90px] text-org text-center my-10">Projects</div>
+
+       <div class="scale-0 md:scale-100 w-[100%] relative">
+
+        <div class="project1 card group">
+          <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 right-[0em] -top-[0.4em]"></div>
+          <img src="./images/projects/weather.png" alt="" class="imgBg">
+          <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+            <div class="flex gap-[0.3em]">
+              <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+              <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+              <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+              <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" />
+          </div>
+            <h2 class="text-[4em]">Weather Forecast</h2>
+            <p class="italic text-[18px]">It's a weather app that retrieves real-time weather information from a web API. Openweathermap API is used to retrieve weather data as per the city name entered by the user and the
+              user-location as per the user-coordinates. In this project HTML, TailwindCSS and JavaScript are used.
+          </p>
+          <div class="flex items-center gap-[1em] mt-[2em]">
+            <button class="btn-pink btn-project" onclick = "window.open('https://weatherapp-dhanesh.netlify.app/','_blank')">Read More</button>
+            <a href="https://github.com/DhaneshDDK/Weather-App" target="_blank">
+            <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+            </a>
+             
+            <a href="https://weatherapp-dhanesh.netlify.app/" target="_blank">
+              <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+            </a>
+        </div>
+          </div>
+        </div>
+
+       <div class="project2 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+         <img src="./images/projects/devDet.png" alt="" class="imgBg">
+         <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+          <div class="flex gap-[0.3em]">
+            <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+            <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+            <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+            <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" />
+        </div>
+          <h2 class="text-[4em]">Dev Detectice</h2>
+          <p class="italic text-[18px]">It's a web app that retrieves real-time git-user information from the github. It shows user's bio, the number of repositories, the number of followers, and the number of people following the user. In this project HTML, TailwindCSS and JavaScript are used.
+        </p>
+        <div class="flex items-center gap-[1em] mt-[2em]">
+          <button class="btn-pink btn-project"   onclick = "window.open('https://gituser-dhanesh.netlify.app/','_blank')">Read More</button>
+          <a href="https://github.com/DhaneshDDK/DevDetective" target="_blank">
+          <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+          </a>
+           
+          <a href="https://gituser-dhanesh.netlify.app/" target="_blank">
+          <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+          </a>
+      </div>
+        </div>
+       </div>
+
+       <div class="project3 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+        <img src="./images/projects/musicplayer.png" alt="" class="imgBg">
+        <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+         <div class="flex gap-[0.3em]">
+           <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+           <!-- <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" /> -->
+           <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" />
+       </div>
+         <h2 class="text-[4em]">Music Player</h2>
+         <p class="italic text-[18px]">It's a music player which is integrated with login and signup options using HTML, CSS,
+          Javascript and used firebase as backend for storing credentials.          
+       </p>
+       <div class="flex items-center gap-[1em] mt-[2em]">
+         <button class="btn-pink btn-project"   onclick = "window.open('https://timely-valkyrie-2527ec.netlify.app/','_blank')">Read More</button>
+         <a href="https://github.com/dandedhanesh/Music-Player/tree/main/Spotify" target="_blank">
+         <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+          
+         <a href="https://timely-valkyrie-2527ec.netlify.app/" target="_blank">
+         <i title="Live Link" class="fa-solid fa-link  cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+     </div>
+       </div>
+      </div>
+
+      <div class="project4 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+        <img src="./images/projects/password.png" alt="" class="imgBg">
+        <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+         <div class="flex gap-[0.3em]">
+           <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" />
+       </div>
+         <h2 class="text-[4em]">Password Generator</h2>
+         <p class="italic text-[18px]">In this project, HTML, TailwindCSS and JavaScript are used. The user has to select the
+          password length, type of characters and then click on the “Generate Password” button. It will show the
+          randomly generated password along with its strength. If the user clicks on the “Copy To Clipboard” icon,
+          then it will copy the password automatically.          
+       </p>
+       <div class="flex items-center gap-[1em] mt-[2em]">
+         <button class="btn-pink btn-project"   onclick = "window.open('https://dhanesh-passwordgenerator.netlify.app/','_blank')">Read More</button>
+         <a href="https://github.com/DhaneshDDK/Password-Generator" target="_blank">
+         <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+          
+         <a href="https://dhanesh-passwordgenerator.netlify.app/" target="_blank">
+         <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+     </div>
+       </div>
+      </div>
+ 
+       <div class="project5 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+        <img src="./images/projects/tictactoe.png" alt="" class="imgBg">
+        <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+         <div class="flex gap-[0.3em]">
+           <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" />
+       </div>
+         <h2 class="text-[4em]">TicTacToe game</h2>
+         <p class="italic text-[18px]">The game is played on a three by three square grid. One player is assigned as O, and the
+           other as X. Each player places a mark in an open area in turn. The winner is the first person to get three
+           of her markings in a row (up, down, across, or diagonally). The game is over when all nine squares are
+           filled. Using new game option, game can be reset.</p>
+       <div class="flex items-center gap-[1em] mt-[2em]">
+         <button class="btn-pink btn-project"   onclick = "window.open('https://tictactoe-dhanesh.netlify.app/','_blank')">Read More</button>
+         <a href="https://github.com/DhaneshDDK/TicTacToe" target="_blank">
+         <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+          
+         <a href="https://tictactoe-dhanesh.netlify.app/" target="_blank">
+         <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+     </div>
+       </div>
+      </div>
+      
+      <div class="project6 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+        <img src="./images/projects/razorpay.png" alt="" class="imgBg">
+        <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+         <div class="flex gap-[0.3em]">
+           <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+           <!-- <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" /> -->
+       </div>
+         <h2 class="text-[4em]">Razorpay Frontend</h2>
+         <p class="italic text-[18px]">It's a frontend clone of Razorpay website which is India’s First Converged Payments Solution Company and the first to launch UPI 2.0 acceptance for businesses using HTML, CSS and TailwindCSS.         
+       </p>
+       <div class="flex items-center gap-[1em] mt-[2em]">
+         <button class="btn-pink btn-project"   onclick = "window.open('https://velvety-cucurucho-f77ff7.netlify.app/','_blank')">Read More</button>
+         <a href="https://github.com/DhaneshDDK/Razorpay" target="_blank">
+         <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+          
+         <a href="https://velvety-cucurucho-f77ff7.netlify.app/" target="_blank">
+         <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+     </div>
+       </div>
+      </div>
+
+      <div class="project7 card group">
+        <div class="value scale-0 group-hover:scale-100 transition-all duration-800 ease-in-out absolute text-[200px] text-white z-10 -right-[0em] -top-[0.4em]"></div>
+        <img src="./images/projects/discord.png" alt="" class="imgBg">
+        <div class="w-[80%] mx-auto mt-[6em] relative z-10 text-[white] group-hover:scale-105 transition-all duration-200 ease-in-out">
+         <div class="flex gap-[0.3em]">
+           <img class="w-[50px]" src="./images/projects/tech/HTML.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/CSS.png" alt="" />
+           <img class="w-[50px]" src="./images/projects/tech/Tailwind.png" alt="" />
+           <!-- <img class="w-[50px]" src="./images/projects/tech/Javascript.svg" alt="" /> -->
+       </div>
+         <h2 class="text-[4em]">Discord Frontend</h2>
+         <p class="italic text-[18px]">It's a frontend clone of discord website which is a social media platform using HTML, CSS and TailwindCSS.         
+       </p>
+       <div class="flex items-center gap-[1em] mt-[2em]">
+         <button class="btn-pink btn-project"   onclick = "window.open('https://discorddhanesh.netlify.app/','_blank')">Read More</button>
+         <a href="https://github.com/DhaneshDDK/Discord" target="_blank">
+         <i title="GitHubLink" class="fa-brands fa-github cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+          
+         <a href="https://discorddhanesh.netlify.app/" target="_blank">
+         <i title="Live Link" class="fa-solid fa-link cursor-pointer text-white text-[35px] hover:text-org"></i>
+         </a>
+     </div>
+       </div>
+      </div>
+
+      </div>
+
+      <div class="md:hidden relative text-lmtext">
+            <a href="https://weatherapp-dhanesh.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Weather Forecast</a>
+            <a href="https://gituser-dhanesh.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Dev Detective</a>
+            <a href="https://timely-valkyrie-2527ec.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Music Player</a>
+            <a href="https://dhanesh-passwordgenerator.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Password Generator</a>
+            <a href="https://tictactoe-dhanesh.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">TicTacToe game</a>
+            <a href="https://velvety-cucurucho-f77ff7.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Razorpay Frontend</a>
+            <a href="https://discorddhanesh.netlify.app/" target="_blank" class="absolute mcard w-[85%] bg-bgcontent rounded-full search text-[2em] py-3 px-6 flex justify-center items-center">Discord Frontend</a>
+           
+      </div>
+    </div>
+
+
+    <!-- skills section -->
+    
+    <div id="skills" class=" rounded-3xl text-lmtext text-[25px] mt-[6rem] search px-16 py-16  md:grid flex flex-col md:grid-cols-2 md:grid-rows-1 gap-10">
+      <div class="flex flex-col gap-10">
+        <h2 class="text-[50px] font-bold text-org lineH">
+          <span class="text-[90px]">M</span>e and
+          <br />
+          MyTech Stack
+        </h2>
+        <div class="text-[18px]">
+          <p>
+            Hi Everyone My name is Dhanesh Kumar I am learning Full Stack Web Development. I
+            have been learning it from last 3 months and Currently I am learning React. Making Beautiful UI-UX designs are my key features. I also know 
+            Data Structures and Algorithms in C++.
+          </p>
+          
+        </div>
+      </div>
+      <div class="flex flex-row items-center justify-center flex-wrap w-[100%]  gap-5 relative backdrop-opacity-60">
+        <img src="./images/blob vector.png" class="blob-style" alt="" />
+
+        <img src="./images/projects/tech/HTML.png" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/CSS.png" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/Javascript.svg" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/React.png" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/NodeJs.svg" alt="" class="skills-logo" />
+        <!-- <img src="../images/project/Next.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="../images/project/Redux.svg" alt="" class="skills-logo" /> -->
+        <img src="./images/projects/tech/Tailwind.png" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/Bootstrap.svg" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/MaterialUI.svg" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/Express.png" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/Git.svg" alt="" class="skills-logo" />
+        <img src="./images/projects/tech/Github.svg" alt="" class="skills-logo" />
+        <!-- <img src="../images/project/Graphql.svg" alt="" class="skills-logo" /> -->
+        <img src="./images/projects/tech/MongoDB.svg" alt="" class="skills-logo" />
+        <!-- <img src="../images/project/Vercel.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="../images/project/ChartJs.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="../images/project/Bash.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="../images/project/Docker.svg" alt="" class="skills-logo" /> -->
+        <!-- <img src="../images/project/K8s.svg" alt="" class="skills-logo" /> -->
+      </div>
+    </div>
+
+    
+   <!-- contact section -->
+   <div id="contact" class="w-[100%] flex flex-col items-center bg-bgGray my-16 py-10 rounded-3xl search">
+        <h1 class="text-org text-[90px] low:text-[60px]">Contact Me</h1>
+        <div class="project-heading" style="color:gray" class="md:text-[40px] text-[30px]">Questions, Thoughts, Or Just Want To Say Hello ?</div>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuJ5qZDgovtykg8gHTm0-mlo1nzWQyKZDh0e6wcj7HFQ_7xA/formResponse" target="_blank"
+         style="display:flex; flex-direction: column; margin-top: 2em;" class="w-[90%] md:w-[70%] relative">
+        <input class="input" required type="text" name="entry.2005620554" placeholder="Enter your name">
+        <input class="input" required type="email" name="entry.1045781291" placeholder="Enter your email address">
+        <input class="input" required type="number" name="entry.1166974658" placeholder="Enter your phone number">
+        <textarea required rows="6" cols="10" class="input" name="entry.839337160" placeholder="Enter your message"></textarea>
+         <div class="flex items-center justify-center mt-3">
+        <button class="btn-pink msg" id="btn"> <div class="flex gap-2 justify-center items-center w-[100%] h-[90%]"><img src="./images/icons8-telegram-app-50.png" width="25px"> Send Message</div></button>
+      </div>
+      </form>
+
+   </div>
+    
+
+  </div>
+
+   
+  <!-- footer -->
+  <div class="w-[100%] relative flex justify-between">
+   
+    <div class="w-[100%] inter:pl-[0em] inter:w-[80%] bg-bgFoot text-bgcontent p-2 inter:p-[2em] absolute right-0 md:rounded-l-full flex items-center justify-evenly">
+      <a href="#nav"><img src="./images/logo-removebg-preview.png" alt="" class="w-[5em]"></a> 
+    <div class="section1 flex  inter:flex-row flex-col items-start justify-center inter:gap-10 text-[1.2em] inter:text-[2em]">
+       <a href="#project">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <div class="section2">
+     <a href="https://www.linkedin.com/in/dhanesh-kumar-dande-3248841b9/" target="_blank"><img class="icons1" src="./images/icons8-linkedin-48.png"></a> 
+     <a href="https://github.com/DhaneshDDK" target="_blank"> <img class="icons1" src="./images/projects/tech/Github.svg"></a>
+     <a href="https://twitter.com/dande_dhanesh" target="_blank"><img class="icons1" src="./images/icons8-twitter-48.png"></a>
+     <a href="mailto: me20b010@iittp.ac.in" target="_blank" target="_blank">  <img class="icons1" src="./images/icons8-mail-contact-30.png" style="color: white;"></a>
+     <a href="https://www.instagram.com/dhanesh_901/?next=%2F" target="_blank"> <img class="icons1" src="./images/icons8-instagram-50.png"></a>
+      
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+ var typeData = new Typed(".role", {
+   strings: [
+     "Frontend Developer",
+     "Backend Developer",
+     "Web Developer",
+     "Coder",
+   ],
+   loop: true,
+   typeSpeed: 100,
+   backSpeed: 80,
+   backDelay: 1000,
+ });
+  </script>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/f776c58278.js" crossorigin="anonymous"></script>
+<script>
+  const button = document.querySelector(".button");
+
+  button.addEventListener("click", (e) => {
+    e.preventDefault;
+    button.classList.add("animate");
+    setTimeout(() => {
+      button.classList.remove("animate");
+    }, 600);
+  });
+</script>
+</body>
+
+
+
+
+</html>
